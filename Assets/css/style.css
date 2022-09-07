@@ -1,3 +1,5 @@
+/* General Page Styling */
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,11 +10,14 @@ body {
     background-color: #d9dcd6;
 }
 
+/* Header Styling */
+
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
+    margin-bottom: 20px;
 }
 
 .header h1 {
@@ -45,25 +50,52 @@ h2 {
     margin-left: 25px;
 }
 
-a {
+.header a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* General Content Styling */
+
 .myDiv {
-    border: 5px outset red;
     background-color: lightblue; 
     text-align: left;
+    margin-bottom: 20px;
+    padding: 50px;
 }
 
-.align-left {
-    text-align: left;
+.about-me, .work, .contact {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
 }
+
+.about-me h2, .work h2 {
+    padding-bottom: 35px;
+}
+
+/* About Me Styling */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.about-me p {
+    padding: 50px 0;
+}
+
+/* Work Styling */
 
 .flex-container {
     display: flex;
     flex-wrap: nowrap;
-    background-color: DodgerBlue;
 }
 
 .flex-container > div {
@@ -75,25 +107,24 @@ a {
     font-size: 30px;
 }
 
-/* creates profile pic image */
-/*
-.profile-pic {
-    height: 80px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/work-profile-pic.jpeg");
-    background-size: cover;
-    background-position: center;
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
 }
-*/
-
-.float-left {
-    float: left;
-    margin-right: 25px;
+  
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+/* Contact Styling */
+
+.contact-list {
+    list-style-type:disc;
+    padding: 35px;
+}
+
+.align-left {
+    text-align: left;
 }

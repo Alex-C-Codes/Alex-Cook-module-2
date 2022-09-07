@@ -13,7 +13,7 @@
     Header Section
     
     I want:
-    [] links that work and send you to the rest of the site when you click on them
+    [x] links that work and send you to the rest of the site when you click on them
 -->
 
 <div class="header">
@@ -33,37 +33,30 @@
     </div>
 </div>
 
-<div class="profile-pic"></div>
-
-<div class="myDiv">
-    <h2>About Me</h2>
-    <p>
-        My name is Alex Cook. I graduated from UGA in 2017 with a degree in Digital Marketing. I have been working in the field since. 
-        I have taken a fullstack bootcamp at Georgia Tech.
-        For fun, I workout, compose music, and read.
-    </p>
-</div>
-
 <!-- 
     Profile Pic + About Me Section
     
     I want:
-    [] profile image within a box, 
-    [] img leans to the left side, 
-    [] img changes size in accordance to the size of the site, 
-    [] and img has my name pop up when the mouse hovers over the image.
+    [x] profile image within a box 
+    [x] img leans to the left side
+    [x] img is reasonable size
+    [ ] text must be responsive
 -->
 
-<div class="content">
+<div id="about-me" class="about-me">
+    <div class="myDiv clearfix">
+    <h2>About Me</h2>
+    <div class="">
+        <img src="./Assets/images/work-profile-pic.jpeg" class="float-left" alt="Alex Cook Profile Picture" width="150px" height="150px"/>
+    </div>
     <div>
-        <img src="./Assets/images/work-profile-pic.jpeg" class="float-left" height="5%" width="5%"/>
-        <h2>About Me</h2>
         <p>
             My name is Alex Cook. I graduated from UGA in 2017 with a degree in Digital Marketing. 
             I have been working in the field since. 
             I have taken a fullstack bootcamp at Georgia Tech.
-            For fun, I workout, compose music, and read.
+            For fun I workout, compose music, and read.
         </p>
+    </div>
     </div>
 </div>
 
@@ -71,18 +64,25 @@
     Work Section
     
     I want:
-    [] images that prerview the work
-    [] images turn grey when mouse hovers over
-    [] images link to the repository of the works
-    [] images are in flex-boxes that move to the next line when the size of the site shrinks
+    [ ] images that prerview the work
+    [ ] images turn grey when mouse hovers over
+    [ ] images link to the repository of the works
+    [ ] images are in flex-boxes that move to the next line when the size of the site shrinks
+
+    [ ] WHEN I click on the link to the section about their work THEN the UI scrolls to a section with titled images of the developer's applications
+    [ ] WHEN I am presented with the developer's first application THEN that application's image should be larger in size than the others
+    [ ] WHEN I click on the images of the applications THEN I am taken to that deployed application
+    [ ] WHEN I resize the page or view the site on various screens and devices THEN I am presented with a responsive layout that adapts to my viewport
 -->
 
-<div class="myDiv">
-    <h2>Work</h2>
-    <!-- look into creating flex-boxes -->
-    <div class="flex-container">
-        <div>Module 1</div>
-        <div>Module 2</div>
+<div id="work" class="work">
+    <div class="myDiv">
+        <h2>My Work</h2>
+        <!-- look into creating flex-boxes -->
+        <div class="flex-container">
+            <div><img src="./Assets/images/module-1-screenshot.png" alt="Module-1"></div>
+            <div><img src="./Assets/images/prework-study-guide-screenshot.png" alt="Prework Study Guide"></div>
+        </div>
     </div>
 </div>
 
@@ -90,20 +90,43 @@
     Contact Section
     
     I want:
-    [] A div that has a list of all my contact information
-    [] the list shows bullet points
-    [] the list leans left
-    [] name, github page, and email address text is in bold
-    [] github link works
+    [x] A div that has a list of all my contact information
+    [x] the list shows bullet points
+    [x] the list leans left
+    [x] name, github page, and email address text is in bold
+    [x] github link works
+    [ ] text must be responsive
 -->
 
-<div class="myDiv">
-    <h2>Contact</h2>
-    <ul style="list-style-type:circle;" class="align-left">
-        <li>Name: Alex Cook</li>
-        <li>GitHub Profile Page: https://github.com/Alex-C-Codes</li>
-        <li>Email Address: alexcook1613@gmail.com</li>
-    </ul>
+<div id="contact" class="contact">
+    <div class="myDiv">
+        <h2>Contact Me</h2>
+        <ul class="contact-list align-left">
+            <li><b>Name: </b>Alex Cook</li>
+            <li><b>GitHub Profile Page: </b><a href="https://github.com/Alex-C-Codes">https://github.com/Alex-C-Codes</a></li>
+            <li><b>Email Address: </b>alexcook1613@gmail.com</li>
+        </ul>
+    </div>
 </div>
 
 </body>
+
+
+<!-- 
+Rubric:
+
+GIVEN I need to sample a potential employee's previous work
+
+[x] WHEN I load their portfolio THEN I am presented with...
+    [x] the developer's name, 
+    [x] a recent photo or avatar, and 
+    [x] links to sections...
+        [x] about them, 
+        [x] their work, and 
+        [x] how to contact them
+[x] WHEN I click one of the links in the navigation THEN the UI scrolls to the corresponding section
+[ ] WHEN I click on the link to the section about their work THEN the UI scrolls to a section with titled images of the developer's applications
+[ ] WHEN I am presented with the developer's first application THEN that application's image should be larger in size than the others
+[ ] WHEN I click on the images of the applications THEN I am taken to that deployed application
+[ ] WHEN I resize the page or view the site on various screens and devices THEN I am presented with a responsive layout that adapts to my viewport
+ -->
