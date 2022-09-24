@@ -65,9 +65,12 @@ h2 {
 }
 
 .about-me, .work, .contact {
-    width: 75%;
-    display: inline-block;
+    margin: auto;
+    width: 95%;
+    display: block;
     margin-left: 20px;
+    margin-right: 20px;
+
 }
 
 .about-me h2, .work h2 {
@@ -95,26 +98,34 @@ h2 {
 
 .flex-container {
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .flex-container > div {
-    background-color: #f1f1f1;
-    width: 100px;
     margin: 10px;
     text-align: center;
     line-height: 75px;
     font-size: 30px;
 }
 
-img {
+.row {
+    display: flex;
+}
+
+.column {
+    padding:5px;
+}
+
+.work-img {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
     width: 150px;
+    object-fit: cover;
 }
   
-img:hover {
+.work-img:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
@@ -127,4 +138,13 @@ img:hover {
 
 .align-left {
     text-align: left;
+}
+
+/*Responsive Design */
+
+@media screen and (max-width: 564px) {
+    body {
+        background-color: lightblue;
+    }
+    
 }

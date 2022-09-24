@@ -14,6 +14,7 @@
     
     I want:
     [x] links that work and send you to the rest of the site when you click on them
+    [ ] text must be responsive
 -->
 
 <div class="header">
@@ -64,14 +65,14 @@
     Work Section
     
     I want:
-    [ ] images that prerview the work
+    [x] images that prerview the work
     [ ] images turn grey when mouse hovers over
-    [ ] images link to the repository of the works
+    [x] images link to the repository of the works
     [ ] images are in flex-boxes that move to the next line when the size of the site shrinks
 
-    [ ] WHEN I click on the link to the section about their work THEN the UI scrolls to a section with titled images of the developer's applications
-    [ ] WHEN I am presented with the developer's first application THEN that application's image should be larger in size than the others
-    [ ] WHEN I click on the images of the applications THEN I am taken to that deployed application
+    [x] WHEN I click on the link to the section about their work THEN the UI scrolls to a section with titled images of the developer's applications
+    [x] WHEN I am presented with the developer's first application THEN that application's image should be larger in size than the others
+    [x] WHEN I click on the images of the applications THEN I am taken to that deployed application
     [ ] WHEN I resize the page or view the site on various screens and devices THEN I am presented with a responsive layout that adapts to my viewport
 -->
 
@@ -79,9 +80,24 @@
     <div class="myDiv">
         <h2>My Work</h2>
         <!-- look into creating flex-boxes -->
-        <div class="flex-container">
-            <div><img src="./Assets/images/module-1-screenshot.png" alt="Module-1"></div>
-            <div><img src="./Assets/images/prework-study-guide-screenshot.png" alt="Prework Study Guide"></div>
+        <div class="flex-container row">
+            <div class="column">
+                <a target="_blank" href="https://alex-c-codes.github.io/Alex-Cook-Horiseon-Marketing/">
+                    <img class="work-img" src="./Assets/images/module-1-screenshot.png" alt="Horiseon-Marketing" style="width:300px;height:225px;">
+                </a>
+            </div>
+        </div>
+        <div class="flex-container row">
+            <div class="column">
+                <a target="_blank" href="https://alex-c-codes.github.io/prework-study-guide/">
+                    <img class="work-img" src="./Assets/images/prework-study-guide-screenshot.png" alt="prework-study-guide" style="width:150px;height:110px">
+                </a>
+            </div>
+            <div class="column">
+                <a target="_blank" href="https://www.youtube.com/channel/UCcZqftjivIchHJiuFULbl1g">
+                    <img class="work-img" src="./Assets/images/youtube-channel.png" alt="prework-study-guide" style="width:150px;height:110px;">
+                </a>
+            </div>
         </div>
     </div>
 </div>
