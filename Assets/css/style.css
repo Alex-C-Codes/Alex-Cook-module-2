@@ -7,7 +7,8 @@
 }
 
 body {
-    background-color: #d9dcd6;
+    /*background-color: #d9dcd6;*/
+    background-color: lightblue;
 }
 
 /* Header Styling */
@@ -17,7 +18,7 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
 }
 
 .header h1 {
@@ -140,11 +141,25 @@ h2 {
     text-align: left;
 }
 
-/*Responsive Design */
+/* Responsive Design */
 
-@media screen and (max-width: 564px) {
-    body {
-        background-color: lightblue;
+/* If screen sizee is 564px wide or more, set font-size of header div to 20px */
+@media screen and (min-width: 564px) {
+    .header div {
+        font-size: 20px;
     }
-    
+}
+
+/* If the screen size is 564px wide or less, set the font-size of <div> to 10px */
+@media screen and (max-width: 600px) {
+    .header div {
+      font-size: 15px;
+    }
+  }
+
+/* If screen sizee is 513px wide or less, set font-size of header div to 10px */
+@media screen and (max-width: 513px) {
+    .header div {
+        font-size: 12px;
+    }
 }
